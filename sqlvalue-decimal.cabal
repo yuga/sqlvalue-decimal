@@ -1,0 +1,21 @@
+name:                sqlvalue-decimal
+version:             0.1.0.0
+-- synopsis:            
+description:         Instances to convert SqlValue to and from Decimal.
+license:             BSD3
+license-file:        LICENSE
+author:              Shohei Murayama
+maintainer:          shohei.murayama@gmail.com
+copyright:           Copyright 2014 Shohei Murayama
+category:            Data
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Database.HDBC.SqlValue.Decimal
+  build-depends:       base <5
+                     , convertible
+                     , HDBC
+                     , Decimal >0.3.1
+  hs-source-dirs:      src
+  default-language:    Haskell2010
